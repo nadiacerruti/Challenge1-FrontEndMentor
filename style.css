@@ -1,5 +1,6 @@
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
-    /* ## Typography
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+/* ## Typography
 
 ### Body Copy
 
@@ -9,126 +10,155 @@
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 300, 400, 600 */
-    
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: var(--VeryDarkBlueMain);
-    }
-    
-     :root {
-        /* Primary */
-        --Softblue: hsl(215, 51%, 70%);
-        --Cyan: hsl(178, 100%, 50%);
-        /* ### Neutral */
-        /* (main BG) */
-        --VeryDarkBlueMain: hsl(217, 54%, 11%);
-        /* (card BG) */
-        --VeryDarkBlueCard: hsl(216, 50%, 16%);
-        /* (line) */
-        --VeryDarkBlueLine: hsl(215, 32%, 27%);
-        --White: hsl(0, 0%, 100%);
-    }
-    
-    .attribution {
-        font-size: 11px;
-        text-align: center;
-    }
-    
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
-    
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        border-radius: 7px;
-        background-color: var(--VeryDarkBlueCard);
-        width: 300px;
-        margin: auto;
-        margin-top: 4%;
-        margin-bottom: 4%;
-        padding: 2.5%;
-    }
-    
-    .ppal-img {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .image-equilibrium {
-        width: 300px;
-        border-radius: 7px;
-    }
-    
-    .elements {
-        display: flex;
-        width: 100%;
-    }
-    
-    .elements p {
-        font-weight: 400;
-        margin-left: 20px;
-    }
-    
-    .elements .second-ph {
-        margin-left: 222px;
-        position: absolute;
-    }
-    
-    svg {
-        margin-top: 20px;
-        position: absolute;
-    }
-    
-    .clock {
-        margin-left: 200px;
-    }
-    
-    .eth {
-        padding-right: 20px;
-    }
-    
-    p,
-    h2 {
-        font-family: 'Outfit', sans-serif;
-        font-size: 18px;
-    }
-    
-    h2 {
-        color: var(--White);
-        font-weight: 600;
-        font-size: 25px;
-    }
-    
-    p {
-        color: var(--Softblue);
-        font-weight: 600;
-    }
-    
-    .elements span {
-        color: var(--Cyan);
-        font-weight: 600;
-    }
-    
-    .creator {
-        width: 100%;
-        border-top: var(--Softblue) 1px solid;
-        padding-top: 4%;
-    }
-    
-    .creator span {
-        font-weight: 600;
-        color: var(--White);
-    }
-    
-    .avatar {
-        width: 50px;
-        border-radius: 50%;
-        border: solid 2px var(--White);
-        float: left;
-        margin-right: 10px;
-    }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--VeryDarkBlueMain);
+}
+
+ :root {
+    /* Primary */
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* ### Neutral */
+    /* (main BG) */
+    --VeryDarkBlueMain: hsl(217, 54%, 11%);
+    /* (card BG) */
+    --VeryDarkBlueCard: hsl(216, 50%, 16%);
+    /* (line) */
+    --VeryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-radius: 7px;
+    background-color: var(--VeryDarkBlueCard);
+    width: 300px;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 2.5%;
+}
+
+.ppal-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.eye {
+    opacity: 0;
+}
+
+.image-equilibrium {
+    width: 300px;
+    border-radius: 7px;
+}
+
+.elements {
+    display: flex;
+    width: 100%;
+}
+
+.elements p {
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.elements .second-ph {
+    margin-left: 222px;
+    position: absolute;
+}
+
+svg {
+    margin-top: 20px;
+    position: absolute;
+}
+
+.clock {
+    margin-left: 200px;
+}
+
+.eth {
+    padding-right: 20px;
+}
+
+p,
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    color: var(--White);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+p {
+    color: var(--Softblue);
+    font-weight: 600;
+}
+
+.elements span {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.second-ph {
+    font-weight: 600;
+}
+
+.creator {
+    width: 100%;
+    border-top: var(--Softblue) 1px solid;
+    padding-top: 4%;
+}
+
+.creator span {
+    font-weight: 600;
+    color: var(--White);
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+    border: solid 2px var(--White);
+    float: left;
+    margin-right: 10px;
+}
+
+.ppal-img:hover {
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.eye:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.creator span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
